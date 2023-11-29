@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="12" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-11-27T15:10:21 IST" name="Suite" finished-at="2023-11-27T15:10:36 IST" duration-ms="15266">
+    <groups>
+      <group name="regression">
+        <method signature="DemoTest.Demo1()[pri:0, instance:com.TestNG.DemoTest@c730b35]" name="Demo1" class="com.TestNG.DemoTest"/>
+        <method signature="PracticeTest.practice2()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" name="practice2" class="com.TestNG.PracticeTest"/>
+        <method signature="SimpleTest.simple1()[pri:0, instance:com.TestNG.SimpleTest@40005471]" name="simple1" class="com.TestNG.SimpleTest"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="PracticeTest.practice1()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" name="practice1" class="com.TestNG.PracticeTest"/>
+        <method signature="PracticeTest.practice2()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" name="practice2" class="com.TestNG.PracticeTest"/>
+        <method signature="SampleTest.sample2()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" name="sample2" class="com.TestNG.SampleTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2023-11-27T15:10:21 IST" name="Test-Runner1" finished-at="2023-11-27T15:10:29 IST" duration-ms="8677">
+      <class name="com.TestNG.DemoTest">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:21 IST" name="config_BC" finished-at="2023-11-27T15:10:24 IST" duration-ms="3355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:24 IST" name="config_BM" finished-at="2023-11-27T15:10:27 IST" duration-ms="2598" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="Demo1()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:27 IST" name="Demo1" finished-at="2023-11-27T15:10:27 IST" duration-ms="44" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at com.TestNG.DemoTest.Demo1(DemoTest.java:13)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1623)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo1 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:27 IST" name="config_AM" finished-at="2023-11-27T15:10:27 IST" duration-ms="537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:27 IST" name="config_BM" finished-at="2023-11-27T15:10:28 IST" duration-ms="1114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="Demo2()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:28 IST" name="Demo2" finished-at="2023-11-27T15:10:28 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo2 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:28 IST" name="config_AM" finished-at="2023-11-27T15:10:29 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.TestNG.DemoTest@c730b35]" started-at="2023-11-27T15:10:29 IST" name="config_AC" finished-at="2023-11-27T15:10:29 IST" duration-ms="529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+      </class> <!-- com.TestNG.DemoTest -->
+      <class name="com.TestNG.PracticeTest">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:21 IST" name="config_BC" finished-at="2023-11-27T15:10:24 IST" duration-ms="3245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:24 IST" name="config_BM" finished-at="2023-11-27T15:10:27 IST" duration-ms="3165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="practice1()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:27 IST" name="practice1" finished-at="2023-11-27T15:10:27 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practice1 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:27 IST" name="config_AM" finished-at="2023-11-27T15:10:28 IST" duration-ms="642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:28 IST" name="config_BM" finished-at="2023-11-27T15:10:29 IST" duration-ms="805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="practice2()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:29 IST" name="practice2" finished-at="2023-11-27T15:10:29 IST" duration-ms="27" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- practice2 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:29 IST" name="config_AM" finished-at="2023-11-27T15:10:29 IST" duration-ms="343" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.TestNG.PracticeTest@175c2241]" started-at="2023-11-27T15:10:29 IST" name="config_AC" finished-at="2023-11-27T15:10:29 IST" duration-ms="373" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+      </class> <!-- com.TestNG.PracticeTest -->
+    </test> <!-- Test-Runner1 -->
+    <test started-at="2023-11-27T15:10:29 IST" name="test-runner2" finished-at="2023-11-27T15:10:36 IST" duration-ms="6497">
+      <class name="com.TestNG.SampleTest">
+        <test-method is-config="true" signature="config_DB()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:20 IST" name="config_DB" finished-at="2023-11-27T15:10:21 IST" duration-ms="210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_DB -->
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:29 IST" name="config_BC" finished-at="2023-11-27T15:10:32 IST" duration-ms="2370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:32 IST" name="config_BM" finished-at="2023-11-27T15:10:33 IST" duration-ms="1728" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="sample1()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:33 IST" name="sample1" finished-at="2023-11-27T15:10:34 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample1 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:34 IST" name="config_AM" finished-at="2023-11-27T15:10:34 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:34 IST" name="config_BM" finished-at="2023-11-27T15:10:35 IST" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="sample2()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:35 IST" name="sample2" finished-at="2023-11-27T15:10:35 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sample2 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:35 IST" name="config_AM" finished-at="2023-11-27T15:10:35 IST" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:35 IST" name="config_AC" finished-at="2023-11-27T15:10:35 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+        <test-method is-config="true" signature="config_AS()[pri:0, instance:com.TestNG.SampleTest@3d285d7e]" started-at="2023-11-27T15:10:36 IST" name="config_AS" finished-at="2023-11-27T15:10:36 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AS -->
+      </class> <!-- com.TestNG.SampleTest -->
+      <class name="com.TestNG.SimpleTest">
+        <test-method is-config="true" signature="config_BC()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:29 IST" name="config_BC" finished-at="2023-11-27T15:10:32 IST" duration-ms="2536" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BC -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:32 IST" name="config_BM" finished-at="2023-11-27T15:10:34 IST" duration-ms="2295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="simple1()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:34 IST" name="simple1" finished-at="2023-11-27T15:10:34 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simple1 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:34 IST" name="config_AM" finished-at="2023-11-27T15:10:35 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_BM()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:35 IST" name="config_BM" finished-at="2023-11-27T15:10:35 IST" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_BM -->
+        <test-method signature="simple2()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:35 IST" name="simple2" finished-at="2023-11-27T15:10:35 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- simple2 -->
+        <test-method is-config="true" signature="config_AM()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:35 IST" name="config_AM" finished-at="2023-11-27T15:10:36 IST" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AM -->
+        <test-method is-config="true" signature="config_AC()[pri:0, instance:com.TestNG.SimpleTest@40005471]" started-at="2023-11-27T15:10:36 IST" name="config_AC" finished-at="2023-11-27T15:10:36 IST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config_AC -->
+      </class> <!-- com.TestNG.SimpleTest -->
+    </test> <!-- test-runner2 -->
+  </suite> <!-- Suite -->
+</testng-results>

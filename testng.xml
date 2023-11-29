@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="com.TestNG.PracticeTest"/>
+      <class name="com.TestNG.DemoTest">
+		  <methods>
+			  <exclude name="Demo1"></exclude>
+		  </methods>
+		  </class>
+      <class name="com.TestNG.SampleTest">
+      <methods>
+		  <include name="sample1"></include>
+	  </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

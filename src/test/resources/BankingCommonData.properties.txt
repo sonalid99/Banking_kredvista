@@ -1,0 +1,10 @@
+browser=chrome
+url=http://rmgtestingserver/domain/Online_Banking_System/
+customerId=1011621	
+password=1234567
+
+staffid=210001
+staffpassword=password
+
+custid=1011393
+custpassword=1234567
