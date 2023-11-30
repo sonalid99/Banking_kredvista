@@ -69,6 +69,7 @@ public class ViewCustomerCreditCheckBalancePOMTest {
 		
 		vcp.custDetailsAndBalance(driver);
 
+		Assert.fail();
 	  
 		//CLICK ON HOME BUTTON
 		shp.homeButton();
