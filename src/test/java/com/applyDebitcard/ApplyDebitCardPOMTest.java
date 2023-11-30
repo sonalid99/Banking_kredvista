@@ -62,7 +62,6 @@ public class ApplyDebitCardPOMTest {
 	//online account opening form page filling textfield filling
 	eLib.readMultipleData("OpenAccount", driver);
 	oap.dobCalendarPopup();
-	//=====missing open account pom page==============
 	oap.submitButton();
 	
 	//confirm account opening form
@@ -108,8 +107,16 @@ public class ApplyDebitCardPOMTest {
 	//String accNo=acp.FindCustomerAccNoFromPan(expectedPanNo, driver);
 	String accNo = driver.findElement(By.xpath("//tr/td[.='"+expectedPanNo+"']/preceding-sibling::td[5]")).getText();
 	mapDebitCard.put("acc_no", accNo);
-	driver.findElement(By.name("logout_btn")).click();
-	driver.findElement(By.xpath("//img[@class='logo_img']")).click();
+	
+	//click on logout
+	shp.staffLogoutButton();
+	
+	//driver.findElement(By.name("logout_btn")).click();
+	
+	//click on customer home button
+	chp.homeButton();
+	
+	//driver.findElement(By.xpath("//img[@class='logo_img']")).click();
 	
 	
 	//apply for debit card

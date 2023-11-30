@@ -16,7 +16,7 @@ public class ViewActiveCustomerPage {
 	//business logic
 	public void validate(WebDriver driver) {
 		try {
-			driver.findElement(By.xpath("//td[text()='1011621011381']"));
+			driver.findElement(By.xpath("//td[text()='1011411011426']"));
 			}
 			catch(Exception e) {
 				System.out.println("Customer Account is Successfully deleted");

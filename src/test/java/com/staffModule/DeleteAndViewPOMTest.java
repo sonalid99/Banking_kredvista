@@ -29,15 +29,33 @@ import com.onlinebanking.kredvista.GenericUtils.FileUtils;
 import com.onlinebanking.kredvista.GenericUtils.WebDriverUtils;
 
 @Listeners(com.onlinebanking.kredvista.GenericUtils.ListenerImplementation.class)
-public class DeleteAndViewPOMTest extends BaseClass {
+public class DeleteAndViewPOMTest {
 
-	@Test(retryAnalyzer = com.onlinebanking.kredvista.GenericUtils.RetryImplementClass.class)
+	@Test
 	public void deleteModuleTest() throws IOException, InterruptedException {
 		
+		WebDriver driver=new ChromeDriver();
+
 		FileUtils fLib=new FileUtils();
 		ExcelUtil eLib=new ExcelUtil();
 		WebDriverUtils wLib=new WebDriverUtils();
 		StaffHomePage shp=new StaffHomePage(driver);
+		
+		
+		String URL=fLib.readDataInPropertFile("url");
+		String USERNAME=fLib.readDataInPropertFile("staffid");
+		String PASSWORD=fLib.readDataInPropertFile("staffpassword");
+		
+		
+		driver.get(URL);
+		wLib.waitForPageLoad(driver, 10);
+
+		CustomerHomePage chp=new CustomerHomePage(driver);
+		chp.staffLoginButton();
+		
+		StaffLoginPage slp=new StaffLoginPage(driver);
+		slp.staffLogin(USERNAME, PASSWORD);
+		
 		
 		shp.deleteCustomer();
 		

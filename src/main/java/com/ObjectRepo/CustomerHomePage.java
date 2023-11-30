@@ -30,6 +30,9 @@ public class CustomerHomePage extends WebDriverUtils {
 	@FindBy(xpath="//a[text()='Staff Login']")
 	private WebElement staffLoginBtn;
 	
+	@FindBy(linkText="Home")
+	private WebElement homeBtn;
+	
 	//Initialization
 	public CustomerHomePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);;
@@ -101,5 +104,9 @@ public class CustomerHomePage extends WebDriverUtils {
 		staffLoginBtn.click();
 	}
 	
+	public void homeButton()
+	{
+		homeBtn.click();
+	}
 	
 }

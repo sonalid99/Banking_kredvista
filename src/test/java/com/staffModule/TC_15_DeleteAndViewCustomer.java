@@ -96,7 +96,7 @@ public class TC_15_DeleteAndViewCustomer {
 	driver.findElement(By.name("viewdet")).click();
 	
 	try {
-	driver.findElement(By.xpath("//td[text()='1011621011381']"));
+	driver.findElement(By.xpath("//td[text()='1011801011046']"));
 	}
 	catch(Exception e) {
 		System.out.println("Customer Account is Successfully deleted");

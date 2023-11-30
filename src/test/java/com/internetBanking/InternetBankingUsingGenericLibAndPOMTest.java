@@ -23,7 +23,7 @@ import com.onlinebanking.kredvista.GenericUtils.JavaUtils;
 import com.onlinebanking.kredvista.GenericUtils.ReInitClass;
 import com.onlinebanking.kredvista.GenericUtils.WebDriverUtils;
 
-@Listeners(com.onlinebanking.kredvista.GenericUtils.ListenerImplementation.class)
+//@Listeners(com.onlinebanking.kredvista.GenericUtils.ListenerImplementation.class)
 public class InternetBankingUsingGenericLibAndPOMTest extends ReInitClass {
 	
 	@Test
@@ -52,7 +52,7 @@ public class InternetBankingUsingGenericLibAndPOMTest extends ReInitClass {
 		iBLogin.LoginTointernetBanking(CUSTOMERID, PASSWORD);
 		Thread.sleep(1000);
 		
-		Assert.fail();
+		//Assert.fail();
 		
 		//click on fund transfer
 		InternetBankingHomePage iBHome=new InternetBankingHomePage(driver);

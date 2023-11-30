@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestNG.HardAssertTest">
+      <class name="com.staffModule.ApproveAndViewActiveCustomerPOMTest">
         <methods>
-          <include name="hardAssert"/>
+          <include name="approveAndView"/>
+          <include name="generateApplNo"/>
         </methods>
-      </class> <!-- com.TestNG.HardAssertTest -->
+      </class> <!-- com.staffModule.ApproveAndViewActiveCustomerPOMTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

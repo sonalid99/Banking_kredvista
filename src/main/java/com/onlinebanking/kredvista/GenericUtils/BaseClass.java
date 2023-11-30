@@ -83,8 +83,8 @@ public class BaseClass {
 	
 	@AfterClass(alwaysRun = true)
 	public void config_AC() {
-		driver.quit();
-		System.out.println("---Close browser----");
+		//driver.quit();
+		//System.out.println("---Close browser----");
 	}
 	
 	@AfterSuite(alwaysRun = true)
