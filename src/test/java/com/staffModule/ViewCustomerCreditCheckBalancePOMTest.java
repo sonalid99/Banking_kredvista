@@ -40,6 +40,7 @@ public class ViewCustomerCreditCheckBalancePOMTest {
 		
 		wLib.maximizeWindow(driver);
 		
+		Thread.sleep(10000);
 		//enter url
 		driver.get(URL);
 		
