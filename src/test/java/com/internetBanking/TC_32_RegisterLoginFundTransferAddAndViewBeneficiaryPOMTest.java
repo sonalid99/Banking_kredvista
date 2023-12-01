@@ -30,11 +30,11 @@ public class TC_32_RegisterLoginFundTransferAddAndViewBeneficiaryPOMTest {
 		WebDriverUtils wLib=new WebDriverUtils();
 		JavaUtils jLib=new JavaUtils();
 		
-		String URL=fLib.readDataInPropertFile("url");
+		String URL=fLib.readDataInPropertyFile("url");
 		
-		String CUSTOMERID=fLib.readDataInPropertFile("customerId");
+		String CUSTOMERID=fLib.readDataInPropertyFile("customerId");
 		
-		String PASSWORD=fLib.readDataInPropertFile("password");
+		String PASSWORD=fLib.readDataInPropertyFile("password");
 		
 		WebDriver driver=new ChromeDriver();
 		

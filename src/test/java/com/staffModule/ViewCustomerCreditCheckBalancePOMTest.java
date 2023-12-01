@@ -31,9 +31,9 @@ public class ViewCustomerCreditCheckBalancePOMTest {
 		ExcelUtil eLib=new ExcelUtil();
 		WebDriverUtils wLib=new WebDriverUtils();
 		
-		String URL = fLib.readDataInPropertFile("url");
-		String STAFFID = fLib.readDataInPropertFile("staffid");
-		String STAFFPASSWORD = fLib.readDataInPropertFile("staffpassword");
+		String URL = fLib.readDataInPropertyFile("url");
+		String STAFFID = fLib.readDataInPropertyFile("staffid");
+		String STAFFPASSWORD = fLib.readDataInPropertyFile("staffpassword");
 		
 		//launch empty browser
 		WebDriver driver=new ChromeDriver();

@@ -42,9 +42,9 @@ public class DeleteAndViewPOMTest {
 		StaffHomePage shp=new StaffHomePage(driver);
 		
 		
-		String URL=fLib.readDataInPropertFile("url");
-		String USERNAME=fLib.readDataInPropertFile("staffid");
-		String PASSWORD=fLib.readDataInPropertFile("staffpassword");
+		String URL=fLib.readDataInPropertyFile("url");
+		String USERNAME=fLib.readDataInPropertyFile("staffid");
+		String PASSWORD=fLib.readDataInPropertyFile("staffpassword");
 		
 		
 		driver.get(URL);

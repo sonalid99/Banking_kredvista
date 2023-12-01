@@ -30,9 +30,9 @@ public class ApproveAndViewActiveCustomerPOMTest {
 		public void approveAndView() throws IOException, InterruptedException {
 			
 			
-			String URL =fLib.readDataInPropertFile("url");
-			String STAFFID =fLib.readDataInPropertFile("staffid");
-			String STAFFPASSWORD = fLib.readDataInPropertFile("staffpassword");
+			String URL =fLib.readDataInPropertyFile("url");
+			String STAFFID =fLib.readDataInPropertyFile("staffid");
+			String STAFFPASSWORD = fLib.readDataInPropertyFile("staffpassword");
 
 			//launch empty browser
 			WebDriverUtils wLib=new WebDriverUtils();
@@ -93,7 +93,7 @@ public class ApproveAndViewActiveCustomerPOMTest {
 				//property file handling for common data
 				FileUtils fLib=new FileUtils();
 				
-				String URL=fLib.readDataInPropertFile("url");
+				String URL=fLib.readDataInPropertyFile("url");
 		
 				ExcelUtil eLib=new ExcelUtil();
 	

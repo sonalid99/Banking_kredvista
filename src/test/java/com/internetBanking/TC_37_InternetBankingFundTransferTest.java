@@ -36,11 +36,11 @@ public class TC_37_InternetBankingFundTransferTest {
 		WebDriverUtils wLib=new WebDriverUtils();
 		JavaUtils jLib=new JavaUtils();
 		
-		String URL=fLib.readDataInPropertFile("url");
+		String URL=fLib.readDataInPropertyFile("url");
 		
-		String CUSTOMERID=fLib.readDataInPropertFile("customerId");
+		String CUSTOMERID=fLib.readDataInPropertyFile("customerId");
 		
-		String PASSWORD=fLib.readDataInPropertFile("password");
+		String PASSWORD=fLib.readDataInPropertyFile("password");
 
 		
 		WebDriver driver=new ChromeDriver();
@@ -162,9 +162,9 @@ public class TC_37_InternetBankingFundTransferTest {
          
          driver.findElement(By.name("logout_btn")).click();
          
-         String CUSTID=fLib.readDataInPropertFile("custid");
+         String CUSTID=fLib.readDataInPropertyFile("custid");
          
-         String CUSTPASSWORD = fLib.readDataInPropertFile("custpassword");
+         String CUSTPASSWORD = fLib.readDataInPropertyFile("custpassword");
         		 
         /*String CUSTID = p.getProperty();
  		

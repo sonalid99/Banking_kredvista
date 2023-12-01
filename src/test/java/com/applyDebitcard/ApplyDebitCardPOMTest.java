@@ -33,10 +33,10 @@ public class ApplyDebitCardPOMTest {
 	OpenAccountPage oap=new OpenAccountPage(driver);
 	CustomerHomePage chp=new CustomerHomePage(driver);
 	
-	String URL=fLib.readDataInPropertFile("url");
-	String BROWSER=fLib.readDataInPropertFile("browser");
-	String STAFFUSERNAME=fLib.readDataInPropertFile("staffid");
-	String STAFFPASSWORD=fLib.readDataInPropertFile("staffPassword");
+	String URL=fLib.readDataInPropertyFile("url");
+	String BROWSER=fLib.readDataInPropertyFile("browser");
+	String STAFFUSERNAME=fLib.readDataInPropertyFile("staffid");
+	String STAFFPASSWORD=fLib.readDataInPropertyFile("staffPassword");
 	
 	int random=jLib.getRandomNo();
 	

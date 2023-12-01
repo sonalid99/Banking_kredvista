@@ -14,7 +14,7 @@ public class FileUtils {
 	 * @throws IOException
 	 */
 
-	public String readDataInPropertFile(String key) throws IOException {
+	public String readDataInPropertyFile(String key) throws IOException {
 		
 		FileInputStream fis=new FileInputStream(IpathConstants.filePath);
 		

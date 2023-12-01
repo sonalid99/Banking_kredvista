@@ -35,9 +35,9 @@ public class TC_03_ApproveAndActiveCustomer {
 		FileUtils fLib=new FileUtils();
 		WebDriverUtils wLib=new WebDriverUtils();
 		
-		String URL =fLib.readDataInPropertFile("url");
-		String STAFFID =fLib.readDataInPropertFile("staffid");
-		String STAFFPASSWORD = fLib.readDataInPropertFile("staffpassword");
+		String URL =fLib.readDataInPropertyFile("url");
+		String STAFFID =fLib.readDataInPropertyFile("staffid");
+		String STAFFPASSWORD = fLib.readDataInPropertyFile("staffpassword");
 
 		//launch empty browser
 		WebDriver driver=new ChromeDriver();

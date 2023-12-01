@@ -34,11 +34,11 @@ public class InternetBankingUsingGenericLibAndPOMTest extends ReInitClass {
 		WebDriverUtils wLib=new WebDriverUtils();
 		JavaUtils jLib=new JavaUtils();
 		
-		String URL=fLib.readDataInPropertFile("url");
+		String URL=fLib.readDataInPropertyFile("url");
 		
-		String CUSTOMERID=fLib.readDataInPropertFile("customerId");
+		String CUSTOMERID=fLib.readDataInPropertyFile("customerId");
 		
-		String PASSWORD=fLib.readDataInPropertFile("password");
+		String PASSWORD=fLib.readDataInPropertyFile("password");
 		
 		driver.get(URL);
 		
@@ -91,9 +91,9 @@ public class InternetBankingUsingGenericLibAndPOMTest extends ReInitClass {
          iBHome.logoutButton();
          
          
-         String CUSTID = fLib.readDataInPropertFile("custid");
+         String CUSTID = fLib.readDataInPropertyFile("custid");
          
-         String CUSTPASSWORD = fLib.readDataInPropertFile("custpassword");
+         String CUSTPASSWORD = fLib.readDataInPropertyFile("custpassword");
         		 
          InternetBankingLoginPage ilp=new InternetBankingLoginPage(driver);
          

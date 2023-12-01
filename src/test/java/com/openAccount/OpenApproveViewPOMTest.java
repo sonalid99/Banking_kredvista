@@ -48,9 +48,9 @@ public class OpenApproveViewPOMTest {
 		JavaUtils jLib=new JavaUtils();
 		
 	    //property file handling for common data
-		String URL=fLib.readDataInPropertFile("url");	
-		String STAFFUSERNAME=fLib.readDataInPropertFile("staffid");
-		String STAFFPASSWORD=fLib.readDataInPropertFile("staffpassword"); 
+		String URL=fLib.readDataInPropertyFile("url");	
+		String STAFFUSERNAME=fLib.readDataInPropertyFile("staffid");
+		String STAFFPASSWORD=fLib.readDataInPropertyFile("staffpassword"); 
 	
 		
 	//launch browser & navigate to application

@@ -19,7 +19,7 @@ public class ReInitClass {
 	@BeforeClass
 	public void reinitBrowser() throws IOException {
 		driver=new ChromeDriver();
-		String BROWSER=fLib.readDataInPropertFile("browser");
+		String BROWSER=fLib.readDataInPropertyFile("browser");
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 		}

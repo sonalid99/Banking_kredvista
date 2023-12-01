@@ -37,7 +37,7 @@ public class BaseClass {
 	//@Parameters("BROWSER")
 	@BeforeClass(alwaysRun = true)
 	public void config_BC() throws IOException {
-		String BROWSER=fLib.readDataInPropertFile("browser");
+		String BROWSER=fLib.readDataInPropertyFile("browser");
 		if(BROWSER.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 		}
@@ -56,9 +56,9 @@ public class BaseClass {
 	
 	@BeforeMethod(alwaysRun = true)
 	public void config_BM() throws IOException {
-		String URL=fLib.readDataInPropertFile("url");
-		String USERNAME=fLib.readDataInPropertFile("staffid");
-		String PASSWORD=fLib.readDataInPropertFile("staffpassword");
+		String URL=fLib.readDataInPropertyFile("url");
+		String USERNAME=fLib.readDataInPropertyFile("staffid");
+		String PASSWORD=fLib.readDataInPropertyFile("staffpassword");
 		
 		
 		driver.get(URL);

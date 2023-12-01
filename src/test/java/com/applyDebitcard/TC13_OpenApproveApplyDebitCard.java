@@ -46,10 +46,10 @@ public class TC13_OpenApproveApplyDebitCard {
 		CustomerHomePage chp=new CustomerHomePage(driver);
 
 		
-		String URL=fLib.readDataInPropertFile("url");
-		String BROWSER=fLib.readDataInPropertFile("browser");
-		String STAFFUSERNAME=fLib.readDataInPropertFile("staffid");
-		String STAFFPASSWORD=fLib.readDataInPropertFile("staffPassword");
+		String URL=fLib.readDataInPropertyFile("url");
+		String BROWSER=fLib.readDataInPropertyFile("browser");
+		String STAFFUSERNAME=fLib.readDataInPropertyFile("staffid");
+		String STAFFPASSWORD=fLib.readDataInPropertyFile("staffPassword");
 	/*FileInputStream fis = new FileInputStream(".\\src\\test\\resources\\BankingCommonData.properties.txt");
 	Properties pObj=new Properties();
 	pObj.load(fis);*/
